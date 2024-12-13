@@ -1,0 +1,25 @@
+{
+    "name": "React DevContainer",
+    "context": "..",
+    "dockerFile": "../Dockerfile",
+    "appPort": [3000],
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "terminal.integrated.shell.linux": "/bin/bash",
+          "workbench.colorTheme": "Default Dark+",
+          "workbench.iconTheme": "vs-seti"
+        },
+        "extensions": [
+          "dbaeumer.vscode-eslint",
+          "esbenp.prettier-vscode",
+          "dsznajder.es7-react-js-snippets",
+          "ms-azuretools.vscode-docker",
+          "hermitter.oh-lucy-vscode",
+          "pkief.material-icon-theme"
+        ]
+      }
+    },
+    "forwardPorts": [3000],
+    "remoteUser": "node"
+  }
